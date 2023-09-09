@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles-two.css">
 </head>
 
 <body>
@@ -34,25 +33,19 @@
     </section>
 
     <section id="about-me">
-        <div class="about-me">
-            <h1>About me</h1>
-        </div>
-        
-                <div class="card-container">
-                    <div>
-                        <p class="card">insert text for about me section</p>
-                    </div>
-                    <div>
-                        <p class="card">insert text for about me section</p>
-                    </div>
-                    <div>
-                        <p class="card">insert text for about me section</p>
-                    </div>
-                    <div>
-                        <p class="card">insert text for about me section</p>
-                    </div>
-                    
+        <div class="about-me-container">
+            <h1>About Me</h1>
+            <div class="card-container">
+                <div class="card"><p>insert about me text</p></div>
+                <div class="card"><p>insert about me text</p></div>
+                <div class="card"><p>insert about me text</p></div>
+                <div class="card"><p>insert about me text</p></div>
+                
             </div>
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+        </div>
     </section>
     <section id="projects">
         <h1>Projects</h1>
@@ -92,24 +85,25 @@
                     <label for="referrer">How did you hear about me?
                         <select id="referrer" name="referrer">
                             <option value="">(select one)</option>
-                            <option value="1">freeCodeCamp News</option>
-                            <option value="2">freeCodeCamp YouTube Channel</option>
-                            <option value="3">freeCodeCamp Forum</option>
+                            <option value="1">LinkedIn</option>
+                            <option value="2">Indeed</option>
+                            <option value="3">Job Application</option>
                             <option value="4">Other</option>
                         </select>
                     </label>
                     <label for="bio">Message:
                         <textarea id="bio" name="bio" rows="3" cols="30"
-                            placeholder="I like coding on the beach..."></textarea>
+                            placeholder="Type your message here..."></textarea>
                     </label>
                 </fieldset>
                 <input type="submit" value="Submit" />
 
             </form>
         </section>
+        <hr>
         <footer>
             <nav>
-                <div class="nav-links">
+                <div class="nav-links-footer">
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about-me">About Me</a></li>
