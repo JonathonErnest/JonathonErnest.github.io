@@ -1,230 +1,230 @@
+/* Reset some default styles */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-nav {
-    height: 150px;
-    background-color: #FFBF00;
-    padding: 0rem calc((100vw - 1300) / 2);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Navigation bar styles */
 
-}
 
 nav ul li {
-    display: inline;
-    font-size: 1.25rem;
+  display: inline;
+  font-size: 1.25rem;
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-style: italic;
-    font-weight: bold;
-    padding: 0 2rem;
+  color: #FFBF00;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: bold;
+  padding: 0 2rem;
 }
 
-nav a {
-    text-decoration: none;
-    color: #000;
-    padding: 0 1.5rem;
 
+nav a {
+  text-decoration: none;
+  color: #000;
+  padding: 0 1.5rem;
 }
 
 .nav-links li a:hover {
-    display: inline-block;
-    transition: 0.1s;
-    color: azure;
+  display: inline-block;
+  transition: 0.1s;
+  color: azure;
 }
 
+/* General list styles */
 li {
-    list-style: none;
+  list-style: none;
 }
 
+/* Home section styles */
 .home {
-    background-color: #FFBF00;
-}
-.nav-links {
-
-    
-}
-
-.nav-container {
-    display: inline-block;
-}
-
-button {
-    border-radius: 50px;
-    padding: 1rem 3rem;
-    background-color: black;
-    font-size: 1rem;
-    color: #EEB200;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover {
-    background-color: #fff;
-    color: #000;
-    
+  background-color: #FFBF00;
 }
 
 .prompt-container {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    background-color: #FFBF00;
-    height: 95vh;
-    padding: 1rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-color: #FFBF00;
+  height: 95vh;
+  padding: 1rem;
 }
 
 .introduction {
-    margin-top: 300px;
+  @media screen {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    color: black;
-    padding: 0rem 2rem;
+    align-content: center;
+    text-align: center;
+    margin-top: 150px;
+  }
+  margin-top: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 0rem 2rem;
 }
+
 
 .introduction h1 {
-    margin-bottom: 1.5rem;
-    font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
 }
-
 
 .introduction h2 {
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
 }
 
+/* Smooth scrolling behavior */
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 button a {
-    text-decoration: none;
-    color: #FFBF00;
+  text-decoration: none;
+  color: #FFBF00;
 }
 
+button {
+  border-radius: 50px;
+  padding: 1rem 3rem;
+  background-color: black;
+  font-size: 1rem;
+  color: #EEB200;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none; /* Add this line to remove the border */
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid black; /* Add this line to create a border on hover */
+}
+
+
+/* About Me section styles */
 .card-container {
-    display: inline-block;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
 }
 
 .about-img {
-    display: inline-block;
-    align-content: ;
+  display: inline-block;
 }
 
 .card {
-    display: flex;
-    align-content: center;
-    width: 50%;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  flex-direction: column;
 }
 
+/* Footer styles */
 footer {
-    display: inline;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+/* Contact Page styles */
 .contact-page {
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    background-color: #EEB200;
-    color: #000;
-    font-family: Tahoma;
-    font-size: 16px;
-  }
-  
-  h1, p {
-    margin: 1em auto;
-    text-align: center;
-  }
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #EEB200;
+  color: #000;
+  font-family: Tahoma, sans-serif;
+  font-size: 16px;
+}
 
-  .contact-header {
-    background-color: #000;
-    padding: 1rem;
-    color: #EEB200;
-  }
-  
-  form {
-    width: 60vw;
-    max-width: 500px;
-    min-width: 300px;
-    margin: 0 auto;
-    padding-bottom: 2em;
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
 
-  }
-  
-  fieldset {
-    border: none;
-    padding: 2rem 0;
-    border-bottom: 3px solid #3b3b4f;
-  }
-  
-  fieldset:last-of-type {
-    border-bottom: none;
-  }
-  
-  label {
-    display: block;
-    margin: 0.5rem 0;
-  }
-  
-  input,
-  textarea,
-  select {
-    margin: 10px 0 0 0;
-    width: 100%;
-    min-height: 2em;
-  }
-  
-  input, textarea {
-    background-color: azure;
-    border: 1px solid #0a0a23;
-    color: #ffffff;
-  }
-  
-  .inline {
-    width: unset;
-    margin: 0 0.5em 0 0;
-    vertical-align: middle;
-  }
-  
-  input[type="submit"] {
-    display: block;
-    width: 60%;
-    margin: 1em auto;
-    height: 2em;
-    font-size: 1.1rem;
-    background-color: #000;
-    border-color: white;
-    min-width: 300px;
-    transition: 0.25s;
-    border-radius: 25px;
-  }
+.contact-header {
+  background-color: #000;
+  padding: 1rem;
+  color: #EEB200;
+}
 
-  input[type="submit"]:hover {
-    cursor: pointer;
-    background-color: #3b3b4f;
-    
-  }
-  
-  input[type="file"] {
-    padding: 1px 2px;
-    
-  }
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
 
-  #contact-me {
-    background-color: #FFBF00;
-  }
- 
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input, textarea, select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: azure;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #000;
+  border-color: white;
+  min-width: 300px;
+  transition: 0.25s;
+  border-radius: 25px;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #3b3b4f;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+#contact-me {
+  background-color: #FFBF00;
+}
+
+.lm-button {
+  border-radius: 40px;
+  border: 5px solid linear-gradient(rgb(blue, green, red), rgb(yellow, purple, black));
+}
