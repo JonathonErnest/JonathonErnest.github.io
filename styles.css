@@ -50,18 +50,10 @@ li {
   grid-template-rows: 1fr 1fr;
   background-color: #FFBF00;
   height: 95vh;
-  padding: 1rem;
 }
 
 .introduction {
-  @media screen {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    margin-top: 150px;
-  }
-  margin-top: 300px;
+  margin-top: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,7 +91,7 @@ button {
   color: #EEB200;
   cursor: pointer;
   transition: 0.3s;
-  border: none; /* Add this line to remove the border */
+  border: none;
 }
 
 button:hover {
@@ -226,5 +218,4 @@ input[type="file"] {
 
 .lm-button {
   border-radius: 40px;
-  border: 5px solid linear-gradient(rgb(blue, green, red), rgb(yellow, purple, black));
 }
