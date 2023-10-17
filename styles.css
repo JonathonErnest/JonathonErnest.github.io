@@ -6,6 +6,10 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+body {
+;
+}
+
 /* Navigation bar styles */
 
 
@@ -15,7 +19,7 @@ nav ul li {
 }
 
 .logo {
-  color: #FFBF00;
+  color: #FFF;
   font-size: 1.5rem;
   font-style: italic;
   font-weight: bold;
@@ -25,7 +29,7 @@ nav ul li {
 
 nav a {
   text-decoration: none;
-  color: #000;
+  color: #0d6efd;
   padding: 0 1.5rem;
 }
 
@@ -42,15 +46,31 @@ li {
 
 /* Home section styles */
 .home {
-  background-color: #FFBF00;
+  background-color: #FFF;
 }
 
 .prompt-container {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  background-color: #FFBF00;
+  background-color: #FFF;
   height: 95vh;
+  background: url('/images/Group1.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (max-width: 415px) {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: #FFF;
+    height: 95vh;
+    background: url('/images/Group1.svg');
+    background-size: 475px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
+
+
 
 .introduction {
   margin-top: 250px;
@@ -58,10 +78,17 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: black;
+  color: #0d6efd;
   padding: 0rem 2rem;
+
 }
 
+.intro-text {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  color: black;
+}
 
 .introduction h1 {
   margin-bottom: 1.5rem;
@@ -71,6 +98,7 @@ li {
 .introduction h2 {
   margin-bottom: 1.5rem;
   font-size: 2rem;
+  color: #000;
 }
 
 /* Smooth scrolling behavior */
@@ -80,7 +108,7 @@ html {
 
 button a {
   text-decoration: none;
-  color: #FFBF00;
+  color: #FFF;
 }
 
 button {
@@ -88,16 +116,20 @@ button {
   padding: 1rem 3rem;
   background-color: black;
   font-size: 1rem;
-  color: #EEB200;
+  color: #FFF;
   cursor: pointer;
   transition: 0.3s;
   border: none;
 }
 
 button:hover {
-  background-color: #fff;
+  background-color: #0d6efd;
   color: #000;
   border: 1px solid black; /* Add this line to create a border on hover */
+
+  @media screen {
+    background-color: #0d6efd;
+  }
 }
 
 
@@ -122,6 +154,7 @@ button:hover {
 
 /* Footer styles */
 footer {
+  color: #0d6efd;
   display: flex;
   align-items: center;
   justify-content: space-between;
