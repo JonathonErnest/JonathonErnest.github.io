@@ -6,13 +6,7 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-body {
-;
-}
-
 /* Navigation bar styles */
-
-
 nav ul li {
   display: inline;
   font-size: 1.25rem;
@@ -58,18 +52,20 @@ li {
   background-size: cover;
   background-repeat: no-repeat;
 
-  @media (max-width: 415px) {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    background-color: #FFF;
-    height: 95vh;
-    background: url('/images/Group1.svg');
-    background-size: 475px;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
 }
 
+@media screen and (max-width: 415px) {
+  .prompt-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-color: #FFF;
+  height: 95vh;
+  background: url('/images/Group1.svg');
+  background-size: 475px;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+}
 
 
 .introduction {
