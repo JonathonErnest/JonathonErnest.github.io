@@ -12,12 +12,21 @@ nav ul li {
   font-size: 1.25rem;
 }
 
+body {
+  background-color: #5798F9;
+}
+
 .logo {
   color: #FFF;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-style: italic;
   font-weight: bold;
   padding: 0 2rem;
+}
+
+#logo-img {
+  height: 1em;
+  width: 5em;
 }
 
 
@@ -46,7 +55,6 @@ li {
 .prompt-container {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  background-color: #FFF;
   height: 95vh;
   background: url('/images/Group1.svg');
   background-size: cover;
